@@ -1,0 +1,9 @@
+{
+  "name": "lijt",
+  "description": "lijt",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "repository": {},
+  "license": "MIT"
+}
