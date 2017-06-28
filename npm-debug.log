@@ -1,0 +1,49 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\software\\nodejs\\node.exe',
+1 verbose cli   'F:\\software\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'debug' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose run-script [ 'predebug', 'debug', 'postdebug' ]
+5 info lifecycle mypage@~predebug: mypage@
+6 silly lifecycle mypage@~predebug: no script for predebug, continuing
+7 info lifecycle mypage@~debug: mypage@
+8 verbose lifecycle mypage@~debug: unsafe-perm in lifecycle true
+9 verbose lifecycle mypage@~debug: PATH: F:\software\nodejs\node_modules\npm\bin\node-gyp-bin;E:\AcFun\Chat\WebSocket\node_modules\.bin;F:\software\Python\Scripts\;F:\software\Python\;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;F:\software\Git\cmd;E:\nodejs\node_global;E:\php;C:\Program Files\TortoiseSVN\bin;F:\software\nodejs\;F:\software\Git\Git\cmd;C:\Users\随风\AppData\Roaming\npm
+10 verbose lifecycle mypage@~debug: CWD: E:\AcFun\Chat\WebSocket
+11 silly lifecycle mypage@~debug: Args: [ '/d /s /c',
+11 silly lifecycle   'fis3 server start --type node --no-browse -p 8088 && fis3 release debug -c && fis3 release debug -wL' ]
+12 silly lifecycle mypage@~debug: Returned: code: 3221225786  signal: null
+13 info lifecycle mypage@~debug: Failed to exec debug script
+14 verbose stack Error: mypage@ debug: `fis3 server start --type node --no-browse -p 8088 && fis3 release debug -c && fis3 release debug -wL`
+14 verbose stack Exit status 3221225786
+14 verbose stack     at EventEmitter.<anonymous> (F:\software\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (F:\software\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid mypage@
+16 verbose cwd E:\AcFun\Chat\WebSocket
+17 error Windows_NT 6.1.7601
+18 error argv "F:\\software\\nodejs\\node.exe" "F:\\software\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "debug"
+19 error node v6.9.4
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error mypage@ debug: `fis3 server start --type node --no-browse -p 8088 && fis3 release debug -c && fis3 release debug -wL`
+22 error Exit status 3221225786
+23 error Failed at the mypage@ debug script 'fis3 server start --type node --no-browse -p 8088 && fis3 release debug -c && fis3 release debug -wL'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the mypage package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     fis3 server start --type node --no-browse -p 8088 && fis3 release debug -c && fis3 release debug -wL
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs mypage
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls mypage
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
