@@ -12,3 +12,17 @@ ul, li {
 a {
 	text-decoration: none;
 }
+textarea:focus {
+	outline: 0;
+}
+.cover {
+	height: 100%;
+	width: 100%;
+}
+input:focus {
+	outline: 0;
+}
+html,body {
+	height: 100%;
+	width: 100%;
+}

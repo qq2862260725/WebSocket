@@ -1,26 +1,20 @@
-var http = require('http');//依赖http
-http.createServer(function(req, res) {//创建一个服务器 
-    res.writeHead(200, {"Content-Type": "text/html"}); // not necessary but better set
-    res.end('<div>Hello world!</div>');
-}).listen(3000);
+var app = require('http').createServer(handler);
+var  io = require('socket.io').listen(app);
+var  fs = require('fs');
 
-var WebSocketServer = require('ws').Server;
-var wss = new WebSocketServer({
-    port: 3000
-});
-wss.on('connection', function(ws) {
-    console.log('someone just coming, now has %d client', wss.clients.length
-);
-    ws.on('message', function(data) {
-        wss.clients.forEach(function(client) {
-            client.send(data);
-        });
-    });
-    ws.on('close', function() {
-        console.log('someone just leave, now has %d client', wss.clients.length);
-    });
-    ws.on('error', function(err) {
-        console.log(err);
-    });
-});
-console.log('ws estriblish success');
+app.listen(8080);
+
+function handler(req, res){
+	fs.readFile(__dirname+'/index.html',
+		function(err, data) {
+			if (err) {
+				res.writeHead(500);
+				return res.end('Error loading index.html')
+			}
+			res.writeHead(200);
+			res.end(data);
+		}
+	);
+}
+
+console.log(app);
